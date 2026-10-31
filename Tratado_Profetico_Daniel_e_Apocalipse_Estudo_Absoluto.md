@@ -1131,18 +1131,16 @@ A ordem dos animais em Apocalipse 13:2 é a exata inversão cronológica da vis�
 
 A tabela sinóptica abaixo expõe com clareza matemática que se trata absolutamente da mesma entidade histórica e espiritual:
 
-+-------------------------------------------+-------------------------------------------+
-| CARACTERÍSTICA PROFÉTICA                  | DANIEL 7 (CHIFRE PEQUENO)                 | APOCALIPSE 13 (BESTA DO MAR)             |
-+-------------------------------------------+-------------------------------------------+
-| Matriz Geopolítica de Origem              | Emerge do Império Romano Ocidental (v. 8) | Emerge do mar revolto de nações (v. 1)    |
-| Sagacidade Humana e Astúcia               | "Olhos como de homem" (v. 8, 20)          | "Número de homem: 666" (v. 18)            |
-| Discurso Arrogante e Sacrílego            | "Boca que proferia insolências" (v. 8, 20)| "Boca que proferia blasfêmias" (v. 5)     |
-| Alvo da Oposição Espiritual               | "Palavras contra o Altíssimo" (v. 25)     | "Blasfêmias contra Deus e Seu nome" (v. 6)|
-| Assalto à Habitação Celestial             | Tira o *tamid* do Santuário (Dn 8:11)     | "Difama o tabernáculo celestial" (v. 6)   |
-| Atividade Perseguidora Sanguinária        | "Fazia guerra contra os santos" (v. 21)   | "Foi-lhe dado fazer guerra aos santos" (7)|
-| Duração Temporal da Supremacia            | "Um tempo, tempos e meio tempo" (v. 25)   | "Autoridade para agir 42 meses" (v. 5)    |
-| Julgamento e Destituição Terminal         | Domínio tirado pelo tribunal (v. 26)      | Ferida mortal / levado em cativeiro (3,10)|
-+-------------------------------------------+-------------------------------------------+
+| Característica Profética | Daniel 7 (Chifre Pequeno) | Apocalipse 13 (Besta do Mar) |
+| :--- | :--- | :--- |
+| **Matriz Geopolítica de Origem** | Emerge do Império Romano Ocidental (v. 8) | Emerge do mar revolto de nações (v. 1) |
+| **Sagacidade Humana e Astúcia** | "Olhos como de homem" (v. 8, 20) | "Número de homem: 666" (v. 18) |
+| **Discurso Arrogante e Sacrílego** | "Boca que proferia insolências" (v. 8, 20) | "Boca que proferia blasfêmias" (v. 5) |
+| **Alvo da Oposição Espiritual** | "Palavras contra o Altíssimo" (v. 25) | "Blasfêmias contra Deus e Seu nome" (v. 6) |
+| **Assalto à Habitação Celestial** | Tira o *tamid* do Santuário (Dn 8:11) | "Difama o tabernáculo celestial" (v. 6) |
+| **Atividade Perseguidora Sanguinária** | "Fazia guerra contra os santos" (v. 21) | "Foi-lhe dado fazer guerra aos santos" (v. 7) |
+| **Duração Temporal da Supremacia** | "Um tempo, tempos e meio tempo" (v. 25) | "Autoridade para agir 42 meses" (v. 5) |
+| **Julgamento e Destituição Terminal** | Domínio tirado pelo tribunal (v. 26) | Ferida mortal / levado em cativeiro (v. 3, 10) |
 
 
 2.2. "Olhos como de Homem" e uma "Boca que Fala Grandezas e Blasfêmias"
@@ -1260,7 +1258,7 @@ Ao presumir alterar a Lei dos Dez Mandamentos — expurgando o mandamento contra
 
 
 ================================================================================
-SEÇÃO III: O PERÍODO PROFÉTICO DOS 1260 ANOS DE SUPREMACIA MEDIEVAL
+SEÇÃO IV: O PERÍODO PROFÉTICO DOS 1260 ANOS DE SUPREMACIA MEDIEVAL
 ================================================================================
 
 4.1. A Sincronização Matemática e Linguística do Cânon Bíblico
@@ -2735,51 +2733,15 @@ A profecia bíblica historicista é um fluxo contínuo, majestoso e inquebrantá
 
 A tabela sinótica abaixo sintetiza a magnífica matriz harmônica convergente entre Daniel e Apocalipse:
 
-=======================================================================================================================================
-PERÍODO HISTÓRICO      DANIEL (2, 7, 8, 9)       SETE IGREJAS          SETE SELOS            SETE TROMBETAS
-=======================================================================================================================================
-31 d.C. a 100 d.C.     70 Semanas culminadas     ÉFESO:                1º SELO:              Preparação litúrgica
-                       Morte do Messias (31)     Pureza apostólica;    Cavalo Branco;        no Santuário Celestial;
-                       Cruz e Pentecostes        rejeição herética;    Vitória do Evangelho  Orações dos santos com
-                       (Dan 9:24-27).            perda do 1º amor.     pelo mundo romano.    o incenso (Ap 8:2-6).
----------------------------------------------------------------------------------------------------------------------------------------
-100 d.C. a 313 d.C.    Roma Imperial de ferro    ESMIRNA:              2º SELO:              Juízos preliminares
-                       (Pernas da Estátua e      Tribulação e mirra;   Cavalo Vermelho;      contra a perseguição
-                       Quarto Animal terrível,   10 dias de aflição    Sangue dos mártires;  romana; preâmbulo das
-                       Dan 2:40; 7:7).           sob Diocleciano.      perda da paz.         invasões bárbaras.
----------------------------------------------------------------------------------------------------------------------------------------
-313 d.C. a 538 d.C.    Transição para os 10      PÉRGAMO:              3º SELO:              1ª A 4ª TROMBETAS:
-                       Chifres; divisão do       Trono de Satanás;     Cavalo Preto;         Queda de Roma Ocidental:
-                       Império Romano pelos      Compromisso estatal;  Fome da Palavra;      Alarico (Visigodos, 410);
-                       povos bárbaros            Doutrina de Balaão    Comércio da fé;       Genserico (Vândalos, 455);
-                       (Dan 2:41-43; 7:24).      e paganização.        Azeite/Vinho salvos.  Átila (Hunos, 453);
-                                                                                             Odoacro extingue o Sol (476).
----------------------------------------------------------------------------------------------------------------------------------------
-538 d.C. a 1517 d.C.   Ponta Pequena papal       TIATIRA:              4º SELO:              5ª TROMBETA (1º AI):
-                       governa por 1260 anos     A mulher Jezabel;     Cavalo Amarelo;       O Islã sarraceno (622);
-                       (Tempo, tempos e 1/2 tempo; Apostasia medieval; Inquisição papal;     Tormento dos 150 anos
-                       Dan 7:25; 8:11-12;        Penitências; obras;   Morte e Hades ceifam  sobre Bizâncio
-                       tamid obscurecido).       Valdenses no deserto. a quarta parte.       (1299 a 1449 d.C.).
----------------------------------------------------------------------------------------------------------------------------------------
-1517 d.C. a 1798 d.C.  Fim dos 1260 anos (1798); SARDES:               5º SELO:              6ª TROMBETA (2º AI):
-                       Ferimento mortal papal;   Reforma Protestante;  Almas sob o altar     Pólvora/Canhões em 1453;
-                       Livro de Daniel é         Ortodoxia morta;      clamam: "Até quando?";Queda de Constantinopla;
-                       descelado no tempo do     Poucos nomes sem      Vestes brancas;       391 anos e 15 dias:
-                       fim (Dan 12:4, 7-9).      manchas nas vestes.   repouso no túmulo.    de 1449 a 11/08/1840 (Litch).
----------------------------------------------------------------------------------------------------------------------------------------
-1798 d.C. a 1844 d.C.  Término das 2.300 Tardes  FILADÉLFIA:           6º SELO (Sinais):     INTERLÚDIO (AP 10):
-                       e Manhãs (Dan 8:14);      Amor fraternal;       Terremoto de Lisboa;  Livrinho de Daniel aberto;
-                       Início da Purificação do  Chave de Davi;        Sol escurecido/Lua;   Doce na boca e amargo;
-                       Santuário Celestial em    Porta aberta no Céu   Queda das estrelas;   A Grande Decepção;
-                       22 de outubro de 1844.    (Santo dos Santos).   Selo dos 144.000.     Mandato de profetizar.
----------------------------------------------------------------------------------------------------------------------------------------
-1844 até a Parousia    Tribunal do Ancião        LAODICEIA:            7º SELO:              7ª TROMBETA (3º AI):
-(Tempo do Fim)         de Dias e Livros abertos  Povo do Juízo;        Silêncio no céu por   Abertura do Santíssimo;
-                       (Dan 7:9-10); Miguel      Mornidão corrigida;   meia hora (7,5 dias); Arca da Aliança visível;
-                       Se levanta (Dan 12:1);    Ouro, vestes, colírio;Todos os anjos na     Lei de Deus e o Sábado;
-                       A Pedra esmiúça a         Cristo bate à porta;  Parousia de Cristo    Reinos se tornam de Cristo
-                       estátua (Dan 2:44-45).    Promessa do trono.    (Segunda Vinda).      (Ap 11:15-19; 14:6-12).
-=======================================================================================================================================
+| Período Histórico | Daniel (2, 7, 8, 9) | Sete Igrejas (Ap 2–3) | Sete Selos (Ap 6–8:1) | Sete Trombetas (Ap 8–11) |
+| :--- | :--- | :--- | :--- | :--- |
+| **31 a 100 d.C.** | 70 Semanas culminadas; Morte do Messias (31 d.C.); Cruz e Pentecostes (Dn 9:24-27). | **Éfeso:** Pureza apostólica; rejeição herética; perda do primeiro amor. | **1º Selo:** Cavalo Branco; Vitória do Evangelho pelo mundo romano. | Preparação litúrgica no Santuário Celestial; Orações dos santos com incenso (Ap 8:2-6). |
+| **100 a 313 d.C.** | Roma Imperial de ferro (Pernas da Estátua e Quarto Animal terrível, Dn 2:40; 7:7). | **Esmirna:** Tribulação e mirra; 10 dias de aflição sob Diocleciano (303–313). | **2º Selo:** Cavalo Vermelho; Sangue dos mártires; perda da paz. | Juízos preliminares contra a perseguição romana; preâmbulo das invasões bárbaras. |
+| **313 a 538 d.C.** | Transição para os 10 Chifres; divisão do Império Romano pelos povos bárbaros (Dn 2:41-43; 7:24). | **Pérgamo:** Trono de Satanás; Compromisso estatal; Doutrina de Balaão e paganização. | **3º Selo:** Cavalo Preto; Fome da Palavra; Comércio da fé; Azeite e Vinho salvos. | **1ª à 4ª Trombetas:** Queda de Roma Ocidental: Alarico (Visigodos, 410); Genserico (Vândalos, 455); Átila (Hunos, 453); Odoacro extingue o Sol (476). |
+| **538 a 1517 d.C.** | Ponta Pequena papal governa por 1.260 anos (Tempo, tempos e metade de um tempo; Dn 7:25; 8:11-12; *tamid* obscurecido). | **Tiatira:** A mulher Jezabel; Apostasia medieval; Penitências e obras; Valdenses no deserto. | **4º Selo:** Cavalo Amarelo; Inquisição papal; Morte e Hades ceifam a quarta parte. | **5ª Trombeta (1º Ai):** O Islã sarraceno (622); Tormento dos 150 anos sobre Bizâncio (1299 a 1449 d.C.). |
+| **1517 a 1798 d.C.** | Fim dos 1.260 anos (1798); Ferimento mortal papal; Livro de Daniel é desselado no tempo do fim (Dn 12:4, 7-9). | **Sardes:** Reforma Protestante; Ortodoxia morta; Poucos nomes sem manchas nas vestes. | **5º Selo:** Almas sob o altar clamam: "Até quando?"; Vestes brancas; repouso no túmulo. | **6ª Trombeta (2º Ai):** Pólvora e Canhões em 1453; Queda de Constantinopla; 391 anos e 15 dias: de 1449 a 11/08/1840 (Josiah Litch). |
+| **1798 a 1844 d.C.** | Término das 2.300 Tardes e Manhãs (Dn 8:14); Início da Purificação do Santuário Celestial em 22 de outubro de 1844. | **Filadélfia:** Amor fraternal; Chave de Davi; Porta aberta no Céu (Santo dos Santos). | **6º Selo (Sinais):** Terremoto de Lisboa (1755); Dia Escuro/Lua (1780); Queda das estrelas (1833); Selo dos 144.000. | **Interlúdio (Ap 10):** Livrinho de Daniel aberto; Doce na boca e amargo no ventre; O Grande Desapontamento; Mandato de profetizar. |
+| **1844 até a Parúsia** | Tribunal do Ancião de Dias e Livros abertos (Dn 7:9-10); Miguel Se levanta (Dn 12:1); A Pedra esmiúça a estátua (Dn 2:44-45). | **Laodiceia:** Povo do Juízo; Mornidão corrigida; Ouro, vestes, colírio; Cristo bate à porta; Promessa do trono. | **7º Selo:** Silêncio no céu por meia hora (7,5 dias); Todos os anjos na Parúsia de Cristo (Segunda Vinda). | **7ª Trombeta (3º Ai):** Abertura do Santíssimo; Arca da Aliança visível; Lei de Deus e o Sábado; Reinos se tornam de Cristo (Ap 11:15-19; 14:6-12). |
 
 
 5.2. O Relógio Inerrante da Providência Divina
@@ -3003,45 +2965,19 @@ No grego original de João, o número é expresso pelas letras numerais *Chi-Xi-
 2. **O Título Histórico Papal e a Gematria Latina:**
    Desde a Reforma Protestante do século XVI até a erudição historicista clássica dos séculos XIX e XX (seguida por teólogos historicistas proeminentes como Uriah Smith, J. N. Andrews e Le Roy Froom), tem sido amplamente demonstrado que o título mais exaltado assumido pelo Bispo de Roma em sua usurpação do sacerdócio celeste é:
 
-$$\textbf{VICARIVS FILII DEI}$$
+**VICARIVS FILII DEI**
 *(Vigário do Filho de Deus / Substituto do Filho de Deus na Terra)*
 
 Esse título blasfemo foi empregado em documentos eclesiásticos históricos proeminentes — tal como a célebre *Doação de Constantino* (*Constitutum Donatio Constantini*), forjada na Idade Média para justificar o poder temporal papal e incorporada ao Direito Canônico Romano através do *Decretum Gratiani* —, bem como citado em publicações católicas históricas (e.g., *Our Sunday Visitor*, edição de 18 de abril de 1915).
 
 Quando se aplica a gematria latina a este título oficial (computando o valor numérico dos caracteres romanos), o resultado aritmético é assombrosamente exato:
 
-$$\begin{array}{lcr}
-\mathbf{V} & = & 5 \\
-\mathbf{I} & = & 1 \\
-\mathbf{C} & = & 100 \\
-\mathbf{A} & = & 0 \\
-\mathbf{R} & = & 0 \\
-\mathbf{I} & = & 1 \\
-\mathbf{V} & = & 5 \\
-\mathbf{S} & = & 0 \\
-\hline
-\text{Soma de } \mathbf{VICARIVS} & = & \mathbf{112}
-\end{array}
-\quad\quad
-\begin{array}{lcr}
-\mathbf{F} & = & 0 \\
-\mathbf{I} & = & 1 \\
-\mathbf{L} & = & 50 \\
-\mathbf{I} & = & 1 \\
-\mathbf{I} & = & 1 \\
-\hline
-\text{Soma de } \mathbf{FILII} & = & \mathbf{53}
-\end{array}
-\quad\quad
-\begin{array}{lcr}
-\mathbf{D} & = & 500 \\
-\mathbf{E} & = & 0 \\
-\mathbf{I} & = & 1 \\
-\hline
-\text{Soma de } \mathbf{DEI} & = & \mathbf{501}
-\end{array}$$
-
-$$\mathbf{TOTAL} = 112 + 53 + 501 = \mathbf{666}$$
+| Palavra | Cálculo das Letras Romanas | Soma Parcial |
+| :--- | :--- | :--- |
+| **VICARIVS** | V (5) + I (1) + C (100) + A (0) + R (0) + I (1) + V (5) + S (0) | **112** |
+| **FILII** | F (0) + I (1) + L (50) + I (1) + I (1) | **53** |
+| **DEI** | D (500) + E (0) + I (1) | **501** |
+| **TOTAL GERAL** | **112 + 53 + 501** | **666** |
 
 Ao atribuir a si mesmo o papel de substituto visível de Cristo na Terra, o pontificado usurpa o ofício singular que as Escrituras reservam exclusivamente ao Espírito Santo (Jo 14:16, 26; 16:7-14), cumprindo com perfeição a descrição apostólica do *"homem da iniquidade, o filho da perdição, o qual se opõe e se levanta contra tudo o que se chama Deus ou é objeto de culto, a ponto de assentar-se no santuário de Deus, ostentando-se como se fosse o próprio Deus"* (2 Ts 2:3-4). O número 666 identifica a totalidade do sistema apóstata centrado na autoridade humana que se rebela contra a Lei de Deus.
 
@@ -3080,21 +3016,11 @@ Todavia, ao examinar os Dez Mandamentos com olhos analíticos, descobre-se uma r
 
 Ao dissecar o texto do mandamento sabático, revelam-se com clareza ofuscante os **três componentes indispensáveis do Selo da Divindade**:
 
-$$\begin{array}{|c|c|l|}
-\hline
-\textbf{Componente do Selo} & \textbf{Termo no Quarto Mandamento} & \textbf{Significado Exegético e Teológico} \\
-\hline
-\textbf{1. O Nome do Legislador} & \textit{"O SENHOR, teu Deus"} & \text{O Tetragrama sagrado: } \mathbf{Yahweh\ Elohim} \text{ (Êx 20:10).} \\
-& & \text{O Deus autoexistente, pessoal e da aliança.} \\
-\hline
-\textbf{2. O Título ou Ofício} & \textit{"FEZ" (O Criador)} & \text{Do hebraico } \mathbf{'asah}\text{ / } \mathbf{Bara}\text{ (Êx 20:11; Gn 1:1).} \\
-& & \text{Seu direito legítimo de legislar funda-se no fato} \\
-& & \text{indiscutível de ser o Autor Soberano da vida.} \\
-\hline
-\textbf{3. O Território / Jurisdição} & \textit{"Os céus, a terra, o mar} & \text{O Universo inteiro e todas as suas esferas} \\
-& \textit{e tudo o que neles há"} & \text{existenciais. Não uma nação local, mas o Cosmos.} \\
-\hline
-\end{array}$$
+| Componente do Selo | Termo no Quarto Mandamento | Significado Exegético e Teológico |
+| :--- | :--- | :--- |
+| **1. O Nome do Legislador** | *"O SENHOR, teu Deus"* | O Tetragrama sagrado: **Yahweh Elohim** (Êx 20:10). O Deus autoexistente, pessoal e da aliança. |
+| **2. O Título ou Ofício** | *"FEZ" (O Criador)* | Do hebraico **'asah** / **Bara** (Êx 20:11; Gn 1:1). Seu direito legítimo de legislar funda-se no fato indiscutível de ser o Autor Soberano da vida. |
+| **3. O Território / Jurisdição** | *"Os céus, a terra, o mar e tudo o que neles há"* | O Universo inteiro e todas as suas esferas existenciais. Não uma nação local, mas o Cosmos. |
 
 Se o quarto mandamento for extirpado ou adulterado no Decálogo, a Lei perde sua assinatura legal! Sem o preceito do sábado, ninguém pode saber quem é o legislador, se é o deus Sol, se é Baal, se é um monarca humano ou o Deus dos hebreus. É o Sábado que confere validade, autoridade cósmica e jurisdição soberana a toda a Lei divina.
 
@@ -3335,39 +3261,14 @@ A porta da graça se fechará. A Terra estará dividida em apenas dois exército
 
 ### SÍNTESE ANALÍTICA DA PARTE 6
 
-$$\begin{array}{|l|l|l|}
-\hline
-\textbf{Bloco Temático} & \textbf{Passagem Bíblica Central} & \textbf{Cumprimento Histórico e Teológico} \\
-\hline
-\textbf{1. A Besta da Terra} & \text{Apocalipse 13:11-18} & \text{Os Estados Unidos da América surgindo por volta de 1798} \\
-& & \text{em território despovoado (o Novo Mundo). Os chifres de cordeiro} \\
-& & \text{sem diademas: Republicanismo civil (governo sem rei) e} \\
-& & \text{Protestantismo bíblico (igreja sem papa). A metamorfose:} \\
-& & \text{a voz de dragão através de leis coercitivas contra a consciência.} \\
-\hline
-\textbf{2. A Imagem da Besta} & \text{Apocalipse 13:14-15;} & \text{A união do Protestantismo apóstata americano com o braço} \\
-& \text{Daniel 3:1-18} & \text{secular do Estado para impor dogmas religiosos mediante a força.} \\
-& & \text{Eco da estátua de Nabucodonosor na planície de Dura.} \\
-\hline
-\textbf{3. O Selo de Deus} & \text{Êxodo 20:8-11;} & \text{Incrustado no quarto mandamento da Lei Moral: Nome (Senhor),} \\
-& \text{Ezequiel 20:12, 20;} & \text{Título (Criador) e Jurisdição (Céu, Terra e Mar).} \\
-& \text{Apocalipse 7:1-4; 14:1} & \text{O sábado bíblico como sinal indelével nos 144.000 santos.} \\
-\hline
-\textbf{4. A Marca da Besta} & \text{Apocalipse 13:16-17;} & \text{A instituição dominical imposta pelo Estado em homenagem a Roma.} \\
-& \text{Apocalipse 14:9-11} & \text{Na fronte: convicção mental e dogma humano;} \\
-& & \text{Na mão: conformismo social e conveniência econômica.} \\
-\hline
-\textbf{5. As Três Mensagens} & \text{Apocalipse 14:6-12} & \text{1ª: O Evangelho eterno, o Juízo Investigativo (1844) e o Sábado;} \\
-& & \text{2ª: A queda moral da Babilônia mística e seu vinho apóstata;} \\
-& & \text{3ª: A solene advertência contra a marca e a ira pura de Deus.} \\
-\hline
-\textbf{6. O Remanescente Fiel} & \text{Apocalipse 14:12;} & \text{A perseverança triunfante (*hypomonē*), a guarda de todos os} \\
-& \text{Apocalipse 12:17; 18:1-4} & \text{mandamentos e a fé viva de Jesus. O Alto Clamor da Chuva Serôdia.} \\
-\hline
-\end{array}$$
-
----
-*Fim da Parte 6 do Grande Tratado Profético de Daniel e Apocalipse.*
+| Bloco Temático | Passagem Bíblica Central | Cumprimento Histórico e Teológico |
+| :--- | :--- | :--- |
+| **1. A Besta da Terra** | Apocalipse 13:11-18 | Os Estados Unidos da América surgindo por volta de 1798 em território despovoado (o Novo Mundo). Os chifres de cordeiro sem diademas: Republicanismo civil (governo sem rei) e Protestantismo bíblico (igreja sem papa). A metamorfose: a voz de dragão através de leis coercitivas contra a consciência. |
+| **2. A Imagem da Besta** | Apocalipse 13:14-15; Daniel 3:1-18 | A união do Protestantismo apóstata americano com o braço secular do Estado para impor dogmas religiosos mediante a força. Eco da estátua de Nabucodonosor na planície de Dura. |
+| **3. O Selo de Deus** | Êxodo 20:8-11; Ezequiel 20:12, 20; Apocalipse 7:1-4; 14:1 | Incrustado no quarto mandamento da Lei Moral: Nome (Senhor), Título (Criador) e Jurisdição (Céu, Terra e Mar). O sábado bíblico como sinal indelével nos 144.000 santos. |
+| **4. A Marca da Besta** | Apocalipse 13:16-17; Apocalipse 14:9-11 | A instituição dominical imposta pelo Estado em homenagem a Roma. Na fronte: convicção mental e dogma humano; na mão: conformismo social e conveniência econômica. |
+| **5. As Três Mensagens** | Apocalipse 14:6-12 | 1ª: O Evangelho eterno, o Juízo Investigativo (1844) e o Sábado; 2ª: A queda moral da Babilônia mística e seu vinho apóstata; 3ª: A solene advertência contra a marca e a ira pura de Deus. |
+| **6. O Remanescente Fiel** | Apocalipse 14:12; Apocalipse 12:17; 18:1-4 | A perseverança triunfante (*hypomonē*), a guarda de todos os mandamentos e a fé viva de Jesus. O Alto Clamor da Chuva Serôdia. |
 
 
 

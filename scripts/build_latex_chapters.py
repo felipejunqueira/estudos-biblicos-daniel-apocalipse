@@ -3,7 +3,8 @@
 Script construtor de capítulos LaTeX para o Grande Tratado Profético de Daniel e Apocalipse.
 Converte as 7 seções completas em código LaTeX robusto, limpo e profissional,
 removendo glifos gregos/hebraicos puros (mantendo a transliteração latina erudita),
-agrupando listas em ambientes itemize/enumerate contínuos, e integrando os diagramas TikZ.
+agrupando listas em ambientes itemize/enumerate contínuos, convertendo tabelas Markdown
+em ambientes tabularx formais, tratando citações com '>' e integrando os diagramas TikZ.
 """
 
 import os
@@ -77,6 +78,8 @@ def clean_script_characters(text):
     # Limpa parênteses que ficaram vazios ou com apenas espaços/vírgulas
     text = re.sub(r'\(\s*[,;\-\–\—\:]*\s*\)', '', text)
     text = re.sub(r'\(\s*\)', '', text)
+    # Limpa vírgulas ou ponto-e-vírgula órfãos antes de fechar parênteses: "(euaggelion aionion, )" -> "(euaggelion aionion)"
+    text = re.sub(r'[,;]\s*\)', ')', text)
     # Limpa espaços duplos
     text = re.sub(r'[ \t]{2,}', ' ', text)
     return text
@@ -95,7 +98,81 @@ def escape_latex(text):
     text = text.replace('^', '\\textasciicircum{}')
     text = text.replace('<', '$<$')
     text = text.replace('>', '$>$')
+    text = text.replace('|', '\\textbar{}')
     return text
+
+def format_inline(text, in_heading=False):
+    """
+    Escapa caracteres LaTeX e aplica negrito (**...**), itálico (*...*) e aspas tipográficas.
+    Se in_heading=True, remove aspas retas/curvas para evitar conflitos com hyperref/bookmarks.
+    """
+    if in_heading:
+        text = text.replace('"', '').replace('“', '').replace('”', '')
+    escaped = escape_latex(text)
+    escaped = re.sub(r'\*\*(.*?)\*\*', r'\\textbf{\1}', escaped)
+    escaped = re.sub(r'\*(.*?)\*', r'\\textit{\1}', escaped)
+    if not in_heading:
+        escaped = re.sub(r'"([^"]*)"', r"``\1''", escaped)
+        # Se sobrar alguma aspa dupla isolada, substitui por ''
+        escaped = escaped.replace('"', "''")
+    return escaped
+
+def render_markdown_table(table_lines):
+    """
+    Converte uma lista de linhas de tabela Markdown (| col1 | col2 | ...)
+    em um ambiente tabularx elegante com booktabs.
+    """
+    rows = []
+    for line in table_lines:
+        s = line.strip()
+        if s.startswith('|') and s.endswith('|'):
+            s = s[1:-1]
+        cells = [c.strip() for c in s.split('|')]
+        # Verificar se é linha separadora (ex: :--- | :---)
+        if all(re.match(r'^[:\-\s]+$', c) for c in cells if c):
+            continue
+        rows.append(cells)
+
+    if not rows:
+        return ""
+
+    num_cols = max(len(r) for r in rows)
+    if num_cols == 3:
+        col_spec = ">{\\raggedright\\arraybackslash}p{0.24\\textwidth} >{\\raggedright\\arraybackslash}X >{\\raggedright\\arraybackslash}X"
+    elif num_cols == 5:
+        col_spec = ">{\\raggedright\\arraybackslash}p{0.14\\textwidth} >{\\raggedright\\arraybackslash}X >{\\raggedright\\arraybackslash}X >{\\raggedright\\arraybackslash}X >{\\raggedright\\arraybackslash}X"
+    else:
+        col_spec = " ".join([">{\\raggedright\\arraybackslash}X"] * num_cols)
+
+    out = []
+    out.append("\n\\begin{table}[htbp]")
+    out.append("\\centering")
+    out.append("\\footnotesize")
+    out.append("\\setlength{\\tabcolsep}{5pt}")
+    out.append("\\renewcommand{\\arraystretch}{1.25}")
+    out.append(f"\\begin{{tabularx}}{{\\textwidth}}{{{col_spec}}}")
+    out.append("\\toprule")
+
+    # Header
+    header = rows[0]
+    while len(header) < num_cols:
+        header.append("")
+    header_formatted = [f"\\textbf{{{format_inline(c)}}}" for c in header]
+    out.append(" & ".join(header_formatted) + " \\\\")
+    out.append("\\midrule")
+
+    # Body
+    for r in rows[1:]:
+        while len(r) < num_cols:
+            r.append("")
+        row_formatted = [format_inline(c) for c in r[:num_cols]]
+        out.append(" & ".join(row_formatted) + " \\\\")
+        out.append("\\addlinespace[3pt]")
+
+    out.append("\\bottomrule")
+    out.append("\\end{tabularx}")
+    out.append("\\end{table}\n")
+    return "\n".join(out)
 
 def convert_section_to_latex(raw_text, chapter_title, diagram_code=""):
     # Limpa caracteres gregos/hebraicos puros
@@ -109,6 +186,7 @@ def convert_section_to_latex(raw_text, chapter_title, diagram_code=""):
         
     in_itemize = False
     in_enumerate = False
+    table_buffer = []
     skip_header = True
 
     def close_lists():
@@ -122,17 +200,43 @@ def convert_section_to_latex(raw_text, chapter_title, diagram_code=""):
             in_enumerate = False
         return res
 
+    def flush_table():
+        nonlocal table_buffer
+        if not table_buffer:
+            return []
+        res = [render_markdown_table(table_buffer)]
+        table_buffer = []
+        return res
+
     for line in lines:
         stripped = line.strip()
 
-        # Pular linhas de separação estética ASCII (=== ou ---)
-        if re.match(r'^[=\-]{5,}$', stripped):
-            continue
-
-        # Pular o título inicial repetido no topo do arquivo original
-        if skip_header and ("GRANDE TRATADO PROFÉTICO" in stripped or "PARTE" in stripped and any(x in stripped for x in ["1:", "2:", "3:", "4:", "5:", "6:", "VII:"])):
+        # Detectar linhas de tabela Markdown
+        if stripped.startswith('|') and stripped.endswith('|') and stripped.count('|') >= 2:
+            latex_output.extend(close_lists())
+            table_buffer.append(stripped)
             continue
         else:
+            if table_buffer:
+                latex_output.extend(flush_table())
+
+        # Pular linhas de separação estética ASCII (=== ou ---)
+        if re.match(r'^[=\-]{3,}$', stripped):
+            continue
+
+        # Pular marcadores de FIM DA PARTE no final dos arquivos
+        if re.match(r'^#*\s*FIM\s+DA\s+PARTE', stripped, re.IGNORECASE):
+            continue
+
+        # Verificar prefixo Markdown (#, ##, ###, ####, #####)
+        md_match = re.match(r'^(#{1,6})\s+(.*)$', stripped)
+        md_level = len(md_match.group(1)) if md_match else 0
+        clean_stripped = md_match.group(2).strip() if md_match else stripped
+
+        # Pular o título inicial repetido no topo do arquivo original
+        if skip_header and ("GRANDE TRATADO PROFÉTICO" in clean_stripped.upper() or ("PARTE" in clean_stripped.upper() and any(x in clean_stripped.upper() for x in ["1:", "2:", "3:", "4:", "5:", "6:", "VII:"]))):
+            continue
+        elif clean_stripped:
             skip_header = False
 
         if not stripped:
@@ -140,50 +244,72 @@ def convert_section_to_latex(raw_text, chapter_title, diagram_code=""):
             latex_output.append("")
             continue
 
-        # Tratar Seções (SEÇÃO I: ... ou CAPÍTULO 1: ...)
-        sec_match = re.match(r'^(?:SEÇÃO|CAPÍTULO)\s+([IVX0-9]+)[:\.\-]\s*(.*)$', stripped, re.IGNORECASE)
-        if sec_match:
+        # Tratar Títulos Especiais de Introdução / Conclusão / Síntese
+        if re.match(r'^(?:INTRODUÇÃO\s+GERAL|CONCLUSÃO\s+GERAL|SÍNTESE\s+ANALÍTICA)(.*)$', clean_stripped, re.IGNORECASE):
             latex_output.extend(close_lists())
-            sec_name = sec_match.group(2).strip()
-            sec_name = sec_name.replace('"', '').replace('“', '').replace('”', '')
-            sec_clean = escape_latex(sec_name)
+            sec_clean = format_inline(clean_stripped, in_heading=True)
             latex_output.append(f"\n\\section{{{sec_clean}}}\n")
             continue
 
-        # Tratar Subseções (1.1. O Princípio... ou 2.1 A Natureza...)
-        subsec_match = re.match(r'^([0-9]+\.[0-9]+)\.?\s*(.*)$', stripped)
+        # Tratar Seções (SEÇÃO I: ... ou CAPÍTULO 1: ...)
+        sec_match = re.match(r'^(?:SEÇÃO|CAPÍTULO)\s+([IVX0-9]+)[:\.\-]\s*(.*)$', clean_stripped, re.IGNORECASE)
+        if sec_match:
+            latex_output.extend(close_lists())
+            sec_name = sec_match.group(2).strip()
+            sec_clean = format_inline(sec_name, in_heading=True)
+            latex_output.append(f"\n\\section{{{sec_clean}}}\n")
+            continue
+
+        # Tratar Subseções numéricas (1.1. O Princípio... ou 2.1 A Natureza...)
+        subsec_match = re.match(r'^([0-9]+\.[0-9]+)\.?\s*(.*)$', clean_stripped)
         if subsec_match:
             latex_output.extend(close_lists())
             sub_name = subsec_match.group(2).strip()
-            sub_name = sub_name.replace('"', '').replace('“', '').replace('”', '')
-            sub_clean = escape_latex(sub_name)
+            sub_clean = format_inline(sub_name, in_heading=True)
             latex_output.append(f"\n\\subsection{{{sub_clean}}}\n")
+            continue
+
+        # Tratar cabeçalhos Markdown #### e ##### (como em parte6)
+        if md_level == 4:
+            latex_output.extend(close_lists())
+            # Remove eventual número inicial "1. " para deixar o \subsection numerar automaticamente
+            sub_name = re.sub(r'^\d+\.\s*', '', clean_stripped)
+            sub_clean = format_inline(sub_name, in_heading=True)
+            latex_output.append(f"\n\\subsection{{{sub_clean}}}\n")
+            continue
+        elif md_level >= 5:
+            latex_output.extend(close_lists())
+            subsub_clean = format_inline(clean_stripped, in_heading=True)
+            latex_output.append(f"\n\\subsubsection*{{{subsub_clean}}}\n")
             continue
 
         # Sub-subseções ou cabeçalhos temáticos como "a) O Título Cristológico:"
         subsubsec_match = re.match(r'^([a-z]\)|\d+\.)\s+([A-ZÀ-Ú][^:]{2,60}:)(.*)$', stripped)
         if subsubsec_match and not (stripped.startswith(('1.', '2.', '3.', '4.', '5.', '6.', '7.', '8.', '9.')) and in_enumerate):
             latex_output.extend(close_lists())
-            prefix = subsubsec_match.group(1)
             title = subsubsec_match.group(2).rstrip(':')
             rest = subsubsec_match.group(3).strip()
-            t_clean = escape_latex(title)
+            t_clean = format_inline(title, in_heading=True)
             latex_output.append(f"\n\\subsubsection*{{{t_clean}}}")
             if rest:
-                r_clean = escape_latex(rest)
-                r_clean = re.sub(r'\*\*(.*?)\*\*', r'\\textbf{\1}', r_clean)
-                r_clean = re.sub(r'\*(.*?)\*', r'\\textit{\1}', r_clean)
-                r_clean = re.sub(r'"([^"]*)"', r"``\1''", r_clean)
+                r_clean = format_inline(rest)
                 latex_output.append(r_clean)
+            continue
+
+        # Blockquotes iniciados com '>'
+        if stripped.startswith('>'):
+            latex_output.extend(close_lists())
+            q_content = stripped.lstrip('>').strip()
+            # Remover asteriscos externos se toda a citação estiver em itálico
+            q_clean = format_inline(q_content)
+            latex_output.append(f"\n\\begin{{quote}}\n\\itshape {q_clean}\n\\end{{quote}}\n")
             continue
 
         # Citações bíblicas destacadas (entre aspas no início e fim com mais de 30 caracteres)
         if stripped.startswith('"') and stripped.endswith('"') and len(stripped) > 30:
             latex_output.extend(close_lists())
             content = stripped[1:-1]
-            c_clean = escape_latex(content)
-            c_clean = re.sub(r'\*\*(.*?)\*\*', r'\\textbf{\1}', c_clean)
-            c_clean = re.sub(r'\*(.*?)\*', r'\\textit{\1}', c_clean)
+            c_clean = format_inline(content)
             latex_output.append(f"\n\\begin{{quote}}\n\\itshape ``{c_clean}''\n\\end{{quote}}\n")
             continue
 
@@ -195,26 +321,20 @@ def convert_section_to_latex(raw_text, chapter_title, diagram_code=""):
                 latex_output.append("\\begin{itemize}")
                 in_itemize = True
             item_text = stripped[2:].strip()
-            item_clean = escape_latex(item_text)
-            item_clean = re.sub(r'\*\*(.*?)\*\*', r'\\textbf{\1}', item_clean)
-            item_clean = re.sub(r'\*(.*?)\*', r'\\textit{\1}', item_clean)
-            item_clean = re.sub(r'"([^"]*)"', r"``\1''", item_clean)
+            item_clean = format_inline(item_text)
             latex_output.append(f"  \\item {item_clean}")
             continue
 
         # Listas numeradas (1. item, 2. item)
         num_match = re.match(r'^(\d+)\.\s+(.*)$', stripped)
-        if num_match and len(num_match.group(2)) < 300:
+        if num_match and len(num_match.group(2)) < 350:
             if in_itemize:
                 latex_output.extend(close_lists())
             if not in_enumerate:
                 latex_output.append("\\begin{enumerate}")
                 in_enumerate = True
             item_text = num_match.group(2).strip()
-            item_clean = escape_latex(item_text)
-            item_clean = re.sub(r'\*\*(.*?)\*\*', r'\\textbf{\1}', item_clean)
-            item_clean = re.sub(r'\*(.*?)\*', r'\\textit{\1}', item_clean)
-            item_clean = re.sub(r'"([^"]*)"', r"``\1''", item_clean)
+            item_clean = format_inline(item_text)
             latex_output.append(f"  \\item {item_clean}")
             continue
 
@@ -222,13 +342,11 @@ def convert_section_to_latex(raw_text, chapter_title, diagram_code=""):
         latex_output.extend(close_lists())
 
         # Parágrafo normal
-        p_clean = escape_latex(stripped)
-        p_clean = re.sub(r'\*\*(.*?)\*\*', r'\\textbf{\1}', p_clean)
-        p_clean = re.sub(r'\*(.*?)\*', r'\\textit{\1}', p_clean)
-        p_clean = re.sub(r'"([^"]*)"', r"``\1''", p_clean)
-
+        p_clean = format_inline(stripped)
         latex_output.append(p_clean)
 
+    if table_buffer:
+        latex_output.extend(flush_table())
     latex_output.extend(close_lists())
     return "\n".join(latex_output)
 
