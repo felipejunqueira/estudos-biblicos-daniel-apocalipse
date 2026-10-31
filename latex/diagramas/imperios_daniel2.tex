@@ -1,0 +1,60 @@
+% Diagrama dos Quatro Impérios e a Sucessão Profética (Daniel 2, 7 e 8)
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[
+    box/.style={rectangle, draw=blue!80!black, fill=blue!5!white, thick, rounded corners=2pt, minimum height=1.1cm, text centered, font=\small},
+    arrow/.style={-{Stealth[length=2.5mm]}, thick, blue!80!black},
+    gold/.style={rectangle, draw=yellow!60!black, fill=yellow!15!white, thick, rounded corners=2pt, minimum height=1.1cm, font=\small},
+    silver/.style={rectangle, draw=gray!80!black, fill=gray!15!white, thick, rounded corners=2pt, minimum height=1.1cm, font=\small},
+    bronze/.style={rectangle, draw=orange!80!black, fill=orange!15!white, thick, rounded corners=2pt, minimum height=1.1cm, font=\small},
+    iron/.style={rectangle, draw=red!70!black, fill=red!10!white, thick, rounded corners=2pt, minimum height=1.1cm, font=\small},
+    feet/.style={rectangle, draw=purple!80!black, fill=purple!10!white, thick, rounded corners=2pt, minimum height=1.1cm, font=\small},
+    stone/.style={rectangle, draw=teal!90!black, fill=teal!20!white, very thick, rounded corners=3pt, minimum height=1.3cm, font=\bfseries\small}
+]
+
+\node[gold, text width=2.4cm] (bab) at (0,0) {
+    \textbf{Babilônia}\\
+    \scriptsize 605--539 a.C.\\
+    Ouro / Leão
+};
+
+\node[silver, text width=2.5cm, right=0.6cm of bab] (med) {
+    \textbf{Medo-Pérsia}\\
+    \scriptsize 539--331 a.C.\\
+    Prata / Urso / Carneiro
+};
+
+\node[bronze, text width=2.5cm, right=0.6cm of med] (gre) {
+    \textbf{Grécia}\\
+    \scriptsize 331--168 a.C.\\
+    Bronze / Leopardo / Bode
+};
+
+\node[iron, text width=2.6cm, below=1.2cm of bab] (rom) {
+    \textbf{Roma Imperial}\\
+    \scriptsize 168 a.C.--476 d.C.\\
+    Ferro / Besta Terrível
+};
+
+\node[feet, text width=2.6cm, right=0.6cm of rom] (div) {
+    \textbf{Europa Dividida}\\
+    \scriptsize 476 d.C.--Presente\\
+    Ferro e Barro / 10 Chifres
+};
+
+\node[stone, text width=3.2cm, right=0.6cm of div] (ped) {
+    \textbf{REINO DE DEUS}\\
+    \scriptsize A Rocha Celestial\\
+    Eterno e Indestrutível
+};
+
+\draw[arrow] (bab) -- (med);
+\draw[arrow] (med) -- (gre);
+\draw[arrow] (gre.south) to[out=270,in=90] (rom.north);
+\draw[arrow] (rom) -- (div);
+\draw[arrow] (div) -- (ped);
+
+\end{tikzpicture}
+\caption{Quadro Sinótico da Sucessão dos Quatro Impérios Mundiais e o Reino Eterno de Deus (Daniel 2 e 7).}
+\label{fig:imperios_daniel2}
+\end{figure}

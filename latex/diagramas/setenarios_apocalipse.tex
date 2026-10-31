@@ -1,0 +1,51 @@
+% Diagrama da Estrutura Tripla Paralela do Apocalipse (Sete Igrejas, Sete Selos e Sete Trombetas)
+\begin{figure}[htbp]
+\centering
+\resizebox{\textwidth}{!}{
+\begin{tikzpicture}[
+    header/.style={rectangle, draw=blue!80!black, fill=blue!20!white, thick, rounded corners=2pt, font=\bfseries\small, minimum height=0.9cm, text centered},
+    cbox/.style={rectangle, draw=teal!80!black, fill=teal!10!white, font=\scriptsize, rounded corners=2pt, minimum height=0.8cm, text centered},
+    sbox/.style={rectangle, draw=purple!80!black, fill=purple!10!white, font=\scriptsize, rounded corners=2pt, minimum height=0.8cm, text centered},
+    tbox/.style={rectangle, draw=orange!80!black, fill=orange!10!white, font=\scriptsize, rounded corners=2pt, minimum height=0.8cm, text centered}
+]
+
+% Cabeçalhos
+\node[header, text width=4.5cm] (h1) at (0,0) {SETE IGREJAS\\ \scriptsize História Espiritual e Interna};
+\node[header, text width=4.5cm, right=0.8cm of h1] (h2) {SETE SELOS\\ \scriptsize História Social e Evangelho};
+\node[header, text width=4.5cm, right=0.8cm of h2] (h3) {SETE TROMBETAS\\ \scriptsize Juízos Político-Militares};
+
+% Linha 1: Era Apostólica / Século I
+\node[cbox, text width=4.5cm, below=0.4cm of h1] (c1) {\textbf{Éfeso} (31--100 d.C.)\\Pureza e primeiro amor};
+\node[sbox, text width=4.5cm, below=0.4cm of h2] (s1) {\textbf{1º Selo:} Cavalo Branco\\Vitória apostólica do evangelho};
+\node[tbox, text width=4.5cm, below=0.4cm of h3] (t1) {\textbf{Cenário:} Incensário de Ouro\\Orações e intercessão celestial};
+
+% Linha 2: Perseguição Romana (100-313 d.C.)
+\node[cbox, text width=4.5cm, below=0.3cm of c1] (c2) {\textbf{Esmirna} (100--313 d.C.)\\Fidelidade sob martírio};
+\node[sbox, text width=4.5cm, below=0.3cm of s1] (s2) {\textbf{2º Selo:} Cavalo Vermelho\\Guerra e perseguição imperial};
+\node[tbox, text width=4.5cm, below=0.3cm of t1] (t2) {\textbf{1ª Trombeta:} Alarico / Visigodos\\Devastação do solo romano};
+
+% Linha 3: Compromisso e União com Estado (313-538 d.C.)
+\node[cbox, text width=4.5cm, below=0.3cm of c2] (c3) {\textbf{Pérgamo} (313--538 d.C.)\\Compromisso com o paganismo};
+\node[sbox, text width=4.5cm, below=0.3cm of s2] (s3) {\textbf{3º Selo:} Cavalo Preto\\Trevas e corrupção doutrinária};
+\node[tbox, text width=4.5cm, below=0.3cm of t2] (t3) {\textbf{2ª a 4ª Trombetas:} Queda de Roma\\Vândalos, Hunos e Odoacro (476 d.C.)};
+
+% Linha 4: Era Medieval / 1260 Anos (538-1517/1798 d.C.)
+\node[cbox, text width=4.5cm, below=0.3cm of c3] (c4) {\textbf{Tiatira / Sardes}\\Supremacia Papal e Reforma};
+\node[sbox, text width=4.5cm, below=0.3cm of s3] (s4) {\textbf{4º e 5º Selos}\\Morte inquisitorial e clamor dos mártires};
+\node[tbox, text width=4.5cm, below=0.3cm of t3] (t4) {\textbf{5ª e 6ª Trombetas}\\Árabes / Sarracenos e Otomanos};
+
+% Linha 5: O Tempo do Fim (1798 a 1844 d.C.)
+\node[cbox, text width=4.5cm, below=0.3cm of c4] (c5) {\textbf{Filadélfia} (1798--1844)\\Despertar e amor fraternal};
+\node[sbox, text width=4.5cm, below=0.3cm of s4] (s5) {\textbf{6º Selo:} Sinais Cósmicos\\Terremoto 1755, Sol Negro 1780, Estrelas 1833};
+\node[tbox, text width=4.5cm, below=0.3cm of t4] (t5) {\textbf{Interlúdio de Apocalipse 10}\\O Livrinho aberto e 11 de Agosto de 1840};
+
+% Linha 6: O Juízo e a Consumação (1844 até o Fim)
+\node[cbox, text width=4.5cm, below=0.3cm of c5] (c6) {\textbf{Laodiceia} (1844--Fim)\\Juízo, remédio e vitória no trono};
+\node[sbox, text width=4.5cm, below=0.3cm of s5] (s6) {\textbf{7º Selo:} Silêncio no Céu\\A Parúsia e a descida de todos os anjos};
+\node[tbox, text width=4.5cm, below=0.3cm of t5] (t6) {\textbf{7ª Trombeta:} A Arca da Aliança\\Abertura do Santíssimo e Juízo Final};
+
+\end{tikzpicture}
+}
+\caption{A Estrutura Tripla Paralela do Apocalipse: Recapitulação Progressiva das Sete Igrejas, Sete Selos e Sete Trombetas.}
+\label{fig:setenarios_apocalipse}
+\end{figure}

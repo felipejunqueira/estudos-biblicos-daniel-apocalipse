@@ -1,0 +1,36 @@
+% Diagrama da Sequência Escatológica Final (Tempo do Fim, Milênio e Nova Terra)
+\begin{figure}[htbp]
+\centering
+\resizebox{\textwidth}{!}{
+\begin{tikzpicture}[
+    flow/.style={rectangle, draw=blue!80!black, fill=blue!10!white, rounded corners=2pt, font=\scriptsize, align=center, minimum height=1.1cm, text width=2.4cm},
+    crisis/.style={rectangle, draw=red!80!black, fill=red!10!white, rounded corners=2pt, font=\scriptsize, align=center, minimum height=1.1cm, text width=2.4cm},
+    glory/.style={rectangle, draw=teal!80!black, fill=teal!15!white, rounded corners=2pt, font=\scriptsize, align=center, minimum height=1.1cm, text width=2.6cm},
+    mil/.style={rectangle, draw=purple!80!black, fill=purple!10!white, rounded corners=2pt, font=\scriptsize, align=center, minimum height=1.1cm, text width=2.6cm},
+    eternal/.style={rectangle, draw=yellow!70!black, fill=yellow!20!white, very thick, rounded corners=3pt, font=\bfseries\scriptsize, align=center, minimum height=1.2cm, text width=2.8cm},
+    arr/.style={-{Stealth[length=2mm]}, thick, gray!80!black}
+]
+
+\node[flow] (e1) at (0,0) {\textbf{Tempo do Fim}\\(1798 a 1844)\\Restauração e Proclamação};
+\node[crisis, right=0.5cm of e1] (e2) {\textbf{Crise Final}\\Lei Dominical\\Marca da Besta vs.\\Selo de Deus};
+\node[crisis, right=0.5cm of e2] (e3) {\textbf{Porta Fechada}\\(Ap 22:11)\\Fim da Graça e\\7 Últimas Pragas};
+\node[glory, right=0.5cm of e3] (e4) {\textbf{Segunda Vinda}\\Literal, Visível e Audível\\Ressurreição dos Justos};
+
+\node[mil, below=1.2cm of e4] (e5) {\textbf{O Milênio (1.000 Anos)}\\Santos no Céu\\Terra Desolada\\Satanás Preso};
+\node[crisis, left=0.5cm of e5] (e6) {\textbf{Fim do Milênio}\\Descida da Nova Jerusalém\\Segunda Ressurreição\\Grande Trono Branco};
+\node[crisis, left=0.5cm of e6] (e7) {\textbf{Segunda Morte}\\Fogo Purificador\\Aniquilação do Pecado\\(Malaquias 4:1-3)};
+\node[eternal, left=0.5cm of e7] (e8) {\textbf{NOVA TERRA}\\Biosfera Recriada\\Comunhão Eterna\\Deus É Amor!};
+
+\draw[arr] (e1) -- (e2);
+\draw[arr] (e2) -- (e3);
+\draw[arr] (e3) -- (e4);
+\draw[arr] (e4.south) -- (e5.north);
+\draw[arr] (e5) -- (e6);
+\draw[arr] (e6) -- (e7);
+\draw[arr] (e7) -- (e8);
+
+\end{tikzpicture}
+}
+\caption{A Sequência Cronológica dos Eventos Finais do Grande Conflito: Da Crise Final à Nova Terra.}
+\label{fig:escatologia_final}
+\end{figure}

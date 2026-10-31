@@ -1,0 +1,244 @@
+\documentclass[11pt,a4paper,openany]{book}
+
+% ==============================================================================
+% PACOTES ESSENCIAIS DE TIPOGRAFIA E IDIOMA
+% ==============================================================================
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[shorthands=off,brazilian]{babel}
+
+% Declarações Unicode para Transliterações Semíticas e Gregas
+\DeclareUnicodeCharacter{0101}{\={a}}
+\DeclareUnicodeCharacter{0103}{\u{a}}
+\DeclareUnicodeCharacter{0112}{\={E}}
+\DeclareUnicodeCharacter{0113}{\={e}}
+\DeclareUnicodeCharacter{0115}{\u{e}}
+\DeclareUnicodeCharacter{014D}{\={o}}
+\DeclareUnicodeCharacter{016B}{\={u}}
+\DeclareUnicodeCharacter{012B}{\={\i}}
+\DeclareUnicodeCharacter{012A}{\u{\i}}
+\DeclareUnicodeCharacter{015A}{\'{S}}
+\DeclareUnicodeCharacter{015B}{\'{s}}
+\DeclareUnicodeCharacter{0259}{e}
+\DeclareUnicodeCharacter{02B9}{'}
+\DeclareUnicodeCharacter{1E0F}{\d{d}}
+\DeclareUnicodeCharacter{1E6D}{\d{t}}
+\DeclareUnicodeCharacter{1E6F}{\b{t}}
+\DeclareUnicodeCharacter{1E63}{\d{s}}
+\DeclareUnicodeCharacter{1E25}{\d{h}}
+\DeclareUnicodeCharacter{1E93}{\d{z}}
+\DeclareUnicodeCharacter{1E35}{\d{k}}
+\DeclareUnicodeCharacter{2013}{--}
+\DeclareUnicodeCharacter{2014}{---}
+\DeclareUnicodeCharacter{2018}{`}
+\DeclareUnicodeCharacter{2019}{'}
+\DeclareUnicodeCharacter{201C}{``}
+\DeclareUnicodeCharacter{201D}{''}
+
+% ==============================================================================
+% GEOMETRIA DA PÁGINA E ESPAÇAMENTO
+% ==============================================================================
+\usepackage{geometry}
+\geometry{
+    a4paper,
+    top=2.8cm,
+    bottom=2.8cm,
+    left=2.6cm,
+    right=2.6cm,
+    headheight=28pt
+}
+\usepackage{setspace}
+\onehalfspacing
+
+% ==============================================================================
+% TIPOGRAFIA AVANÇADA, CORES E ELEMENTOS GRÁFICOS
+% ==============================================================================
+\usepackage{microtype}
+\usepackage{xcolor}
+\definecolor{theoblue}{RGB}{18, 52, 102}
+\definecolor{theogold}{RGB}{184, 134, 11}
+\definecolor{theodark}{RGB}{30, 30, 30}
+\definecolor{boxbg}{RGB}{248, 250, 253}
+\definecolor{boxframe}{RGB}{41, 128, 185}
+
+\usepackage{titlesec}
+\titleformat{\chapter}[display]
+  {\normalfont\huge\bfseries\color{theoblue}}{\chaptertitlename\ \thechapter}{20pt}{\Huge\titlerule[1.5pt]\vspace{1ex}}
+\titlespacing*{\chapter}{0pt}{20pt}{30pt}
+
+\titleformat{\section}
+  {\normalfont\Large\bfseries\color{theoblue}}{\thesection}{1em}{}
+\titleformat{\subsection}
+  {\normalfont\large\bfseries\color{theodark}}{\thesubsection}{1em}{}
+
+% Cabeçalhos e Rodapés
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE,RO]{\thepage}
+\fancyhead[LO]{\slshape\nouppercase{\rightmark}}
+\fancyhead[RE]{\slshape\nouppercase{\leftmark}}
+\renewcommand{\headrulewidth}{0.4pt}
+
+% Caixas de Destaque Teológico
+\usepackage{tcolorbox}
+\tcbuselibrary{skins,breakable}
+\newtcolorbox{theobox}[1][]{
+    enhanced,
+    breakable,
+    colback=boxbg,
+    colframe=theoblue,
+    arc=3pt,
+    boxrule=1.2pt,
+    left=15pt,
+    right=15pt,
+    top=12pt,
+    bottom=12pt,
+    fonttitle=\bfseries\color{white},
+    coltitle=white,
+    colbacktitle=theoblue,
+    title=#1
+}
+
+% Tabelas e Figuras
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{caption}
+\captionsetup{font=small,labelfont=bf,skip=8pt}
+
+% Diagramas Vetoriais TikZ
+\usepackage{tikz}
+\usetikzlibrary{shapes,arrows.meta,positioning,calc,fit}
+
+% Hiperlinks e Metadados PDF
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=theoblue,
+    citecolor=theoblue,
+    urlcolor=theoblue,
+    pdfauthor={Felipe Junqueira},
+    pdftitle={Grande Tratado Profético de Daniel e Apocalipse},
+    pdfsubject={Teologia Bíblica, Profecia Historicista, Daniel e Apocalipse},
+    pdfkeywords={Daniel, Apocalipse, Historicismo, Adventista do Sétimo Dia, Santuário Celestial, 1844, 2300 tardes e manhãs}
+}
+
+% ==============================================================================
+% CORPO DO DOCUMENTO
+% ==============================================================================
+\begin{document}
+
+% ------------------------------------------------------------------------------
+% CAPA E FOLHA DE ROSTO
+% ------------------------------------------------------------------------------
+\begin{titlepage}
+\centering
+\vspace*{1.5cm}
+{\scshape\Large Igreja Adventista do Sétimo Dia \par}
+{\scshape\large Manuais e Séries Oficiais ``Bíblia Fácil'' \par}
+\vspace{2.5cm}
+
+{\Huge\bfseries\color{theoblue} GRANDE TRATADO PROFÉTICO INTEGRADO DE DANIEL E APOCALIPSE \par}
+\vspace{1cm}
+{\Large\itshape A Visão Historicista Completa, Cronológica e Teológica do Grande Conflito dos Séculos \par}
+\vspace{1.5cm}
+
+\rule{0.6\textwidth}{1.5pt}
+
+\vspace{2.5cm}
+{\large\bfseries Coordenação e Compilação dos Estudos:\par}
+\vspace{0.3cm}
+{\Large\bfseries Felipe Junqueira\par}
+
+\vfill
+{\large Outubro de 2026 \par}
+\end{titlepage}
+
+% ------------------------------------------------------------------------------
+% PÁGINAS PRELIMINARES
+% ------------------------------------------------------------------------------
+\frontmatter
+
+\chapter*{Prólogo da Obra}
+\addcontentsline{toc}{chapter}{Prólogo da Obra}
+
+\begin{quote}
+\itshape
+``O Senhor Deus nada fará sem primeiro revelar o Seu segredo aos Seus servos, os profetas.'' (Amós 3:7)
+\end{quote}
+
+Este tratado não é uma coletânea dispersa de lições fragmentadas, nem uma leitura superficial de versículos descontextualizados. Constitui uma obra de fôlego monumental, concebida para conduzir o leitor por uma jornada contínua, profunda, teologicamente densa e ininterrupta através de todas as revelações proféticas entrelaçadas dos livros de Daniel e do Apocalipse.
+
+A hermenêutica que norteia cada página desta obra é o \textbf{Historicismo Clássico} --- o mesmo método adotado pelos apóstolos, pelos reformadores protestantes (Lutero, Calvino, Zuínglio, Melâncton, Knox, Cranmer, Isaac Newton) e amadurecido de forma definitiva pelo movimento adventista sob a orientação direta das Sagradas Escrituras.
+
+A arquitetura dos livros proféticos de Daniel e Apocalipse baseia-se em cinco princípios invioláveis:
+\begin{enumerate}
+    \item \textbf{O Princípio da Recapitulação Progressiva:} Cada visão profética retoma o mesmo arco histórico, aprofundando detalhes que não foram revelados na visão anterior;
+    \item \textbf{O Princípio Dia-Ano (Nm 14:34; Ez 4:6):} Nas profecias apocalípticas de caráter simbólico, um dia profético representa um ano solar literal na história terrestre;
+    \item \textbf{A Centralidade do Santuário Celestial (Hebreus 8 e 9):} Todas as profecias do Apocalipse e de Daniel são estruturadas em torno do ministério sacerdotal contínuo (\textit{Tamid}) e da purificação final (\textit{Yom Kippur}) operada por Jesus Cristo no templo celestial;
+    \item \textbf{O Tema Unificador do Grande Conflito:} As convulsões geopolíticas, guerras e perseguições são o reflexo terreno da batalha espiritual originada no Céu e consumada no Calvário;
+    \item \textbf{A Vitória Incondicional do Povo de Deus:} Todos os impérios terrestres e poderes apóstatas sucumbem irrevogavelmente perante a Rocha celestial cortada sem auxílio de mãos humanas.
+\end{enumerate}
+
+\tableofcontents
+
+% ------------------------------------------------------------------------------
+% CAPÍTULOS PRINCIPAIS
+% ------------------------------------------------------------------------------
+\mainmatter
+
+\input{capitulos/pilar1.tex}
+\input{capitulos/pilar2.tex}
+\input{capitulos/pilar3.tex}
+\input{capitulos/pilar4.tex}
+\input{capitulos/pilar5.tex}
+\input{capitulos/pilar6.tex}
+\input{capitulos/pilar7.tex}
+
+% ------------------------------------------------------------------------------
+% EPÍLOGO E LINHA DO TEMPO HISTORICISTA
+% ------------------------------------------------------------------------------
+\backmatter
+
+\chapter{Epílogo: O Panorama Cronológico Integrado}
+
+\begin{quote}
+\itshape
+``Aquele que dá testemunho destas coisas diz: Certamente cedo venho. Amém; vem, Senhor Jesus!'' (Apocalipse 22:20)
+\end{quote}
+
+A história da redenção caminha para o seu desfecho glorioso. Desde o outono de 605 a.C., quando Daniel e seus companheiros foram levados cativos para as margens do rio Eufrates, até o estabelecimento da Nova Terra recriada, a mão do Deus Todo-Poderoso traçou de antemão cada marco do destino cósmico.
+
+\section*{Linha do Tempo Profética Unificada (605 a.C. à Eternidade)}
+
+\begin{itemize}
+    \item \textbf{605 a.C.} --- Início do cativeiro babilônico e primeiro império mundial da profecia (Cabeça de ouro de Daniel 2; Leão alado de Daniel 7).
+    \item \textbf{539 a.C.} --- Conquista de Babilônia por Ciro e início do Império Medo-Persa (Peito e braços de prata de Daniel 2; Urso com três costelas de Daniel 7; Carneiro com dois chifres de Daniel 8).
+    \item \textbf{457 a.C.} --- Decreto do rei Artaxerxes Longímano para restaurar e reedificar Jerusalém (Esdras 7). Ponto de partida inegociável das 70 semanas (490 anos) e das 2.300 tardes e manhãs (Daniel 8:14; 9:25).
+    \item \textbf{331 a.C.} --- Batalha de Gaugamela: Alexandre, o Grande, derrota Dario III e estabelece o Império Greco-Macedônio (Ventre e coxas de bronze de Daniel 2; Leopardo com quatro asas e quatro cabeças de Daniel 7; Bode com o chifre notável de Daniel 8).
+    \item \textbf{323 a.C.} --- Morte de Alexandre na Babilônia; divisão do império em quatro reinos helenísticos (Diádocos: Cassandro, Lisímaco, Seleuco e Ptolomeu).
+    \item \textbf{168 a.C.} --- Batalha de Pidna: Roma subjuga a Macedônia e emerge como o quarto império mundial (Pernas de ferro de Daniel 2; Besta terrível e espantosa com dentes de ferro de Daniel 7).
+    \item \textbf{27 d.C.} --- Batismo de Jesus Cristo no Jordão no 15º ano de Tibério César; início do ministério do Messias ungido exatamente ao fim das 69 semanas (483 anos) de Daniel 9:25.
+    \item \textbf{31 d.C.} --- Crucificação expiatória de Cristo na Páscoa, na ``metade da septuagésima semana'' (Daniel 9:27); o sacrifício e a oblação cessam com o rasgar sobrenatural do véu do templo terrestre. Ascensão de Cristo como Sumo Sacerdote no Santuário Celestial.
+    \item \textbf{34 d.C.} --- Apedrejamento do diácono Estêvão perante o Sinédrio judaico; encerramento definitivo das 70 semanas reservadas à teocracia de Israel (Daniel 9:24); o evangelho é levado oficialmente aos gentios.
+    \item \textbf{476 d.C.} --- Queda do Império Romano do Ocidente; fragmentação de Roma em dez reinos tribais bárbaros (Pés e dedos de ferro e barro de Daniel 2; Dez chifres de Daniel 7).
+    \item \textbf{538 d.C.} --- Entrada em pleno vigor do decreto do imperador Justiniano proclamando o Bispo de Roma cabeça de todas as igrejas; início dos 1.260 anos de supremacia papal (Daniel 7:25; Apocalipse 12:6, 14; 13:5).
+    \item \textbf{1517 d.C.} --- Início da Reforma Protestante (Martinho Lutero afixa as 95 Teses em Wittenberg); desmascaramento do anticristo e restauração das verdades fundamentais das Escrituras.
+    \item \textbf{1755 d.C. (1º de Novembro)} --- O Grande Terremoto de Lisboa; primeiro sinal cósmico preliminar do sexto selo (Apocalipse 6:12).
+    \item \textbf{1780 d.C. (19 de Maio)} --- O ``Dia Escuro'' e a lua em sangue na América do Norte; segundo grande sinal astronômico do sexto selo (Apocalipse 6:12).
+    \item \textbf{1798 d.C. (15 de Fevereiro)} --- O general francês Louis-Alexandre Berthier invade Roma e depõe o Papa Pio VI; término dos 1.260 anos proféticos e recebimento da ``ferida mortal'' pela besta do mar (Daniel 7:25; Apocalipse 13:3). Início oficial do ``Tempo do Fim''.
+    \item \textbf{1798 d.C.} --- Emergência simultânea da ``Besta que sobe da terra'' (Estados Unidos da América) com dois chifres como de cordeiro (republicanismo e protestantismo) em território despovoado (Apocalipse 13:11).
+    \item \textbf{1833 d.C. (13 de Novembro)} --- A espetacular chuva de meteoros das Leônidas em toda a América do Norte; cumprimento do terceiro sinal astronômico do sexto selo (Apocalipse 6:13).
+    \item \textbf{1840 d.C. (11 de Agosto)} --- Capitulação do Império Otomano às potências europeias conforme a predição profética de Josiah Litch baseada na sexta trombeta (Apocalipse 9:15).
+    \item \textbf{1844 d.C. (22 de Outubro)} --- Fim dos 2.300 anos proféticos de Daniel 8:14; início do Juízo Investigativo pré-advento no Santo dos Santos do Santuário Celestial (\textit{Yom Kippur} antitípico); início do período de Laodiceia e proclamação mundial da Tríplice Mensagem Angélica (Apocalipse 14:6--12).
+    \item \textbf{FUTURO PRÓXIMO} --- Crise final: promulgação de leis dominicais compulsórias lideradas pelos Estados Unidos (imagem e marca da besta); sacudidura e selamento final dos 144.000 fiéis guardadores dos mandamentos de Deus e da fé de Jesus; o Alto Clamor de Apocalipse 18.
+    \item \textbf{CONSUMAÇÃO} --- Fechamento da Porta da Graça (Apocalipse 22:11); Miguel Se levanta (Daniel 12:1); o Tempo de Angústia de Jacó; derramamento das Sete Últimas Pragas (Apocalipse 16); batalha do Armagedom.
+    \item \textbf{A SEGUNDA VINDA} --- Ressurreição especial (Daniel 12:2; Apocalipse 1:7); gloriosa e visível descida de Cristo com todas as hostes celestes; a Rocha atinge os pés da estátua (Daniel 2:34--35); ressurreição geral dos justos e trasladação dos santos vivos; destruição dos ímpios vivos pelo resplendor da glória.
+    \item \textbf{O MILÊNIO (1.000 ANOS NO CÉU)} --- A Terra vazia e em trevas profundas (\textit{abussos}); Satanás amarrado pelas circunstâncias inelutáveis; os santos reinam com Cristo no céu exercendo o juízo confirmatório e examinando os livros celestes (Apocalipse 20:4; 1 Coríntios 6:2--3).
+    \item \textbf{PÓS-MILÊNIO} --- Descida da Nova Jerusalém sobre o Monte das Oliveiras fendido (Zacarias 14:4--5); segunda ressurreição (ímpios para condenação); Satanás solto arregimenta as nações para sitiar a Cidade Santa; Sessão do Juízo do Grande Trono Branco; todo joelho se dobra e confessa a soberania de Cristo (Filipenses 2:10--11); o fogo desce do céu e devora os rebeldes (a Segunda Morte e a aniquilação completa de Malaquias 4:1--3).
+    \item \textbf{A ETERNIDADE NA NOVA TERRA} --- Recriação perfeita da biosfera terrena (\textit{kainos} de Apocalipse 21:1--5); comunhão corporal de Deus com o Seu povo remido; guarda contínua do Sábado de sábado em sábado por toda a eternidade (Isaías 66:22--23); a imunização perpétua do universo contra o mal (Naum 1:9). O Grande Conflito findou para todo o sempre: \textbf{DEUS É AMOR!}
+\end{itemize}
+
+\end{document}

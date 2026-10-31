@@ -3,3 +3,9 @@ temp/
 *.jpg
 __pycache__/
 *.pyc
+*.aux
+*.fls
+*.fdb_latexmk
+*.log
+*.out
+*.toc

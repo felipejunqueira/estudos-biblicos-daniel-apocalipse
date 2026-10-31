@@ -1,0 +1,61 @@
+% Diagrama da Grande Linha do Tempo das 2.300 Tardes e Manhãs e 70 Semanas
+\begin{figure}[htbp]
+\centering
+\resizebox{\textwidth}{!}{
+\begin{tikzpicture}[
+    scale=0.95,
+    timeline/.style={thick, -{Stealth[length=3mm]}, draw=blue!90!black},
+    marker/.style={circle, fill=blue!80!black, inner sep=2pt},
+    block/.style={rectangle, draw=blue!70!black, fill=blue!10!white, rounded corners=2pt, font=\scriptsize, align=center},
+    seventy/.style={rectangle, draw=teal!80!black, fill=teal!15!white, rounded corners=2pt, font=\scriptsize, align=center},
+    judgment/.style={rectangle, draw=red!80!black, fill=red!15!white, rounded corners=2pt, font=\bfseries\scriptsize, align=center}
+]
+
+% Linha principal
+\draw[timeline] (0,0) -- (16.5,0);
+
+% Pontos de tempo
+\coordinate (start) at (1,0);      % 457 a.C.
+\coordinate (bap) at (6,0);        % 27 d.C.
+\coordinate (cross) at (7.2,0);    % 31 d.C.
+\coordinate (stephen) at (8.4,0);  % 34 d.C.
+\coordinate (end1844) at (15.5,0); % 1844 d.C.
+
+% Marcadores verticais
+\foreach \p in {start, bap, cross, stephen, end1844}
+    \draw[thick, gray!70] (\p) -- ++(0,0.3) (\p) -- ++(0,-0.3);
+
+% Rótulos de datas
+\node[below=0.4cm of start, font=\small\bfseries] {457 a.C.};
+\node[below=0.8cm of start, font=\scriptsize, align=center] {Decreto de\\Artaxerxes};
+
+\node[below=0.4cm of bap, font=\small\bfseries] {27 d.C.};
+\node[below=0.8cm of bap, font=\scriptsize, align=center] {Batismo\\(69 Semanas)};
+
+\node[below=0.4cm of cross, font=\small\bfseries] {31 d.C.};
+\node[below=0.8cm of cross, font=\scriptsize, align=center] {Crucifixão\\(Meio da Semana)};
+
+\node[below=0.4cm of stephen, font=\small\bfseries] {34 d.C.};
+\node[below=0.8cm of stephen, font=\scriptsize, align=center] {Morte de Estêvão\\(Fim das 70 Semanas)};
+
+\node[below=0.4cm of end1844, font=\small\bfseries] {22 Out 1844};
+\node[below=0.8cm of end1844, font=\scriptsize, align=center] {Purificação do Santuário\\Juízo Investigativo};
+
+% Faixa superior: 70 semanas (490 anos)
+\draw[seventy] (start |- 0, 1.3) rectangle (stephen |- 0, 2.1) 
+    node[pos=.5] {\textbf{70 Semanas (490 Anos Proféticos)} --- Cortadas (\textit{chathak}) para o Povo Judeu};
+
+% Faixa superior ampla: 2.300 tardes e manhãs (2.300 anos)
+\draw[block] (start |- 0, 2.4) rectangle (end1844 |- 0, 3.2)
+    node[pos=.5] {\textbf{2.300 Tardes e Manhãs (2.300 Anos Literais: 457 a.C. a 1844 d.C.)} --- Daniel 8:14};
+
+% Destaque do Juízo de 1844
+\node[judgment, above=0.3cm of end1844] (jbox) at (15.5, 0.6) {
+    \textit{Yom Kippur}\\Antitípico
+};
+
+\end{tikzpicture}
+}
+\caption{A Grande Cadeia Profética das 2.300 Tardes e Manhãs (Daniel 8:14) e as 70 Semanas Messiânicas (Daniel 9:24--27).}
+\label{fig:timeline_2300dias}
+\end{figure}
