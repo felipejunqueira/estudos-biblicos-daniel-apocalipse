@@ -143,3 +143,4 @@ def compile_tratado():
 
 if __name__ == "__main__":
     compile_tratado()
+
